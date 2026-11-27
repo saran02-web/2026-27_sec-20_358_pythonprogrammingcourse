@@ -1,14 +1,12 @@
-counter = 0  
+n = int(input("Enter number: "))
 
-def increment_counter():
-    global counter  
-    counter += 1
-    print("Counter inside function:", counter)
-
-print("Initial counter:", counter)
-
-increment_counter()
-increment_counter()
-increment_counter()
-
-print("Final counter:", counter)
+if n < 1 or n > 100:
+    print("Out of range")
+elif n == 1:
+    print("Not Prime")
+elif n == 2 or n == 3 or n == 5 or n == 7:
+    print("Prime")
+elif n % 2 == 0 or n % 3 == 0 or n % 5 == 0 or n % 7 == 0:
+    print("Not Prime")
+else:
+    print("Prime")
