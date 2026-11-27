@@ -1,0 +1,7 @@
+s = input("Enter the string: ")
+print("Upper:", s.upper())
+print("Lower:", s.lower())
+print("Strip:", s.strip())
+print("Split:", s.split())
+print("Replace:", s.replace("Python", "Java"))
+print("Join:", "_".join(["Hello", "Python"]))
