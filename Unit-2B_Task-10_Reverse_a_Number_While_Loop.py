@@ -1,14 +1,8 @@
-counter = 0  
-
-def increment_counter():
-    global counter  
-    counter += 1
-    print("Counter inside function:", counter)
-
-print("Initial counter:", counter)
-
-increment_counter()
-increment_counter()
-increment_counter()
-
-print("Final counter:", counter)
+number = int(input("Enter a number: "))
+original_number = number
+reversed_number = 0
+while number > 0:
+    digit = number % 10
+    reversed_number = reversed_number * 10 + digit
+    number = number // 10
+print("Reverse of",original_number,"is",reversed_number)
