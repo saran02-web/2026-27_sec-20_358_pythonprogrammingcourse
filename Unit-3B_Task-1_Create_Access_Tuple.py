@@ -1,0 +1,5 @@
+tuple_data = ("red", "green", "blue")
+print(tuple_data)
+print(tuple_data[0])
+print(tuple_data[-1])
+print(len(tuple_data))
